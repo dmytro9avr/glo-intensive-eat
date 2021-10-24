@@ -1,0 +1,330 @@
+.main
+
+.container
+
+.slider
+
+.slide
+   border-radius: 20px
+   overflow: hidden
+   min-height: 400px
+   display: flex
+   align-items: center
+   padding: 100px 
+   position: relative
+   // slide__content
+   &__content
+      position: relative
+      max-width: 400px
+   // .slide__title
+   &__title
+      margin-bottom: 15px
+      font-weight: bold
+      font-size: 50px
+      line-height: 51px
+   // .slide__text
+   &__text
+      font-weight: bold
+      font-size: 16px
+      line-height: 23px
+      margin-bottom: 30px
+      // .slide__text_white
+      &_white
+         color: $txt_white
+   &__seasson
+      &:before
+         content: ''
+         position: absolute
+         background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%)
+         left: 0
+         right: 0
+         top: 0
+         bottom: 0
+         width: 100%
+         height: 100%
+      &_autumn
+         background-image: url("../img/main/1.jpg") 
+         background-repeat: no-repeat
+         background-size: cover
+      &_summer
+         background-image: url("../img/main/2.jpg") 
+         background-repeat: no-repeat
+         background-size: cover
+      &_winner
+         background-image: url("../img/main/3.jpg") 
+         background-repeat: no-repeat
+         background-size: cover
+
+   // .slide__button
+   &__button
+      display: inline-block
+      color: $txt_white
+      font-weight: 500
+      font-size: 14px
+      line-height: 23px
+      background: $bg_button
+
+.button
+   // .button__primary
+   &__primary
+      border-radius: 25px
+      padding: 13px 53px
+
+
+.promo
+   padding-top: 50px
+   &__raw
+      display: flex
+      justify-content: space-between
+   @media (max-width: 1250px)
+      &__raw
+         flex-direction: column
+         align-items: center
+.card
+   padding: 32px
+   border-radius: 20px
+   overflow: hidden
+   position: relative
+   max-width: 570px
+   width: 100%
+   min-height: 380px
+   display: flex
+   flex-direction: column
+   justify-content: space-between
+   &:before
+      z-index: -1
+      content: ''
+      position: absolute
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+   &__text-light
+      color: $txt_white
+   // .card__header
+   &__header
+      
+   // .card__title
+   &__title
+      font-weight: 500
+      font-size: 24px
+      line-height: 23px
+      margin-top: 4px
+      margin-bottom: 21px
+   // .card__description
+   &__description
+      font-weight: 500
+      font-size: 16px
+      line-height: 23px
+      max-width: 200px
+   // .card__footer
+   &__footer
+   // .card__price
+   &__price
+      display: block
+      font-weight: 500
+      font-size: 24px
+      line-height: 23px
+      margin-bottom: 8px
+   // .card__delivery
+   &__delivery
+      display: block
+      font-weight: 500
+      font-size: 16px
+      line-height: 23px
+      margin-bottom: 25px
+   // &__left
+   //    background-image: url('../img/cards/left.jpg')
+   //    background-repeat: no-repeat
+   //    background-size: cover
+   &__image
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      z-index: -4
+      object-fit: cover
+   @media (max-width: 1250px)
+      max-width: none
+      margin-bottom: 20px
+      &:last-child
+         margin-bottom: 0
+
+.button
+   // .button__default
+   &__default
+      display: inline-block
+      border-radius: 50px
+      padding: 13px 53px
+      font-weight: 500
+      font-size: 16px
+      line-height: 23px
+      color: $button-grey
+      background-color: #fff
+
+
+// delivery
+.delivery-week
+   padding: 100px 0
+.delivery
+   // .delivery__cards
+   &__cards
+      display: flex
+      flex-wrap: wrap
+      margin: -15px
+   // .delivery__card
+   &__card
+      margin: 15px
+      position: relative
+      width: 275px
+      height: 182px
+      border-radius: 18px
+      overflow: hidden
+   // .delivery__img
+   &__img
+      width: 100%
+      height: 100%
+      object-fit: cover
+   // .delivery__tag
+   &__tag
+      position: absolute
+      left: 10px
+      top: 16px
+      padding: 5px 10px
+      border-radius: 30px
+      font-weight: 500
+      font-size: 20px
+      line-height: 23px
+      &_health
+         color: #49494F
+         background: #D0FD89
+      &_vegetables
+         color: #fff
+         background: #AEBC41
+      &_meat
+         color: #fff
+         background: #B86B78
+      &_birds
+         color: #fff
+         background: #D68334
+      &_fish
+         color: #fff
+         background: #CD6255
+      &_kids
+         color: #49494F
+         background: #FFFDBF
+      &_parents
+         color: #49494F
+         background: #F6FDC8
+      &_celebrate
+         color: #49494F
+         background: #FEF7FE
+
+
+// next
+
+
+.category
+   background: #F6F6F6
+   padding: 40px 0 60px
+
+.tabs
+   display: flex
+   margin-bottom: 62px
+   // .tabs__item
+   &__item
+      margin-right: 58px
+      &:last-child
+         margin-right: 0 
+
+   // .tabs__link
+   &__link
+      font-size: 20px
+      line-height: 23px
+      color: #49494F
+      &.active
+         color: $color_main
+      &:hover
+         color: $color_main
+         cursor: pointer
+
+   // .tabs__content
+   &__content
+      margin: -15px
+   // .tabs__cards
+   &__cards
+      display: flex
+
+   // .tabs__card
+   &__card
+      margin: 15px
+      max-width: 270px
+      border-radius: 20px
+      overflow: hidden
+      background-color: #fff
+   &__card-content
+      padding: 23px
+   // .tabs__image
+   &__image
+      max-width: 100%
+   // .tabs__title
+   &__title
+      margin-bottom: 13px
+      font-weight: 500
+      font-size: 20px
+      line-height: 23px
+   // .tabs__discription
+   &__discription
+      font-weight: 500
+      font-size: 14px
+      line-height: 23px
+      color: $tabs-discription
+      margin-bottom: 36px
+   // .tabs__info
+   &__info
+      display: flex
+      align-items: center
+      justify-content: space-between
+   // .tabs__good
+   &__good
+
+   // .tabs__price
+   &__price
+      font-weight: 500
+      font-size: 23px
+      line-height: 23px
+      color: $tabs-price
+      display: block
+      margin-bottom: 5px
+   // .tabs__weight
+   &__weight
+      font-weight: 500
+      font-size: 17px
+      line-height: 20px
+      color: $tabs-weight
+   // .tabs__button
+
+
+   
+.button
+   cursor: pointer
+   &_outline
+      font-weight: 500
+      font-size: 16px
+      line-height: 19px
+      color: $color_main
+      background-color: transparent
+      border: 2px solid $color_main
+      border-radius: 33px
+      padding: 15px 25px
+   &_center
+      display: block
+      margin: 60px auto 0
+      width: 315px
+.outline
+
+

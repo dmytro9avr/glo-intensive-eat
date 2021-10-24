@@ -12,15 +12,15 @@
       border-radius: 10px
       display: flex
       align-items: center
-      flex-grow: 1
+      flex: 0 1 51.84%
       position: relative
-      max-width: 620px
+      
    &__input
       font-size: 16px
       line-height: 23px
       color: $bg_formPlaceHolder
       background-color: transparent
-      width: 100%
+      width: 96%
       padding: 13px 20px 
       // .search__button
    &__button
@@ -31,6 +31,19 @@
       height: 100%
       padding: 0 18px
       cursor: pointer
+@media (max-width: 1250px)
+   .search
+      &__form
+         margin-left: auto
+      &__input
+         width: 94%
+@media (max-width: 850px)
+   .search
+      &__form
+         flex: 0 1 38%
+      &__input
+         width: 89%
+
 .auth
    margin-left: auto
    &__login
