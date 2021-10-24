@@ -8,7 +8,7 @@
    <title>Glo food delivery</title>
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/zeroing.css">
-</head>
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/></head>
 
 <body>
    <header class="header container">
@@ -47,7 +47,7 @@
       </a>
    </header>
    <div class="main">
-         <div class="slider container">
+         <div class="slider container single-item">
             <div class="slide slide__text_white slide__seasson slide__seasson_autumn">
                <div class="slide__content">
                   <h2 class="slide__title">Неделя осенних овощей</h2>
@@ -108,36 +108,52 @@
             <h2 class="section__title"> Доставка готовой еды на неделю </h2>
             <div class="delivery__cards">
                <div class="delivery__card">
-                  <img src="img/delivery/1.jpg" alt="card" class="delivery__img">
-                  <span class="delivery__tag delivery__tag_health">ЗОЖ</span>
+                  <a href="">
+                     <img src="img/delivery/1.jpg" alt="card" class="delivery__img">
+                     <span class="delivery__tag delivery__tag_health">ЗОЖ</span>
+                  </a>
                </div>
                <div class="delivery__card">
-                  <img src="img/delivery/2.jpg" alt="card" class="delivery__img">
-                  <span class="delivery__tag delivery__tag_vegetables">Овощное</span>
+                  <a href="">
+                     <img src="img/delivery/2.jpg" alt="card" class="delivery__img">
+                     <span class="delivery__tag delivery__tag_vegetables">Овощное</span>
+                  </a>
                </div>
                <div class="delivery__card">
-                  <img src="img/delivery/3.jpg" alt="card" class="delivery__img">
-                  <span class="delivery__tag delivery__tag_meat">Мясное</span>
+                  <a href="">
+                     <img src="img/delivery/3.jpg" alt="card" class="delivery__img">
+                     <span class="delivery__tag delivery__tag_meat">Мясное</span>
+                  </a>
                </div>
                <div class="delivery__card">
-                  <img src="img/delivery/4.jpg" alt="card" class="delivery__img">
-                  <span class="delivery__tag delivery__tag_birds">Птица</span>
+                  <a href="">
+                     <img src="img/delivery/4.jpg" alt="card" class="delivery__img">
+                     <span class="delivery__tag delivery__tag_birds">Птица</span>
+                  </a>
                </div>
                <div class="delivery__card">
-                  <img src="img/delivery/5.jpg" alt="card" class="delivery__img">
-                  <span class="delivery__tag delivery__tag_fish">Рыбное</span>
+                  <a href="">
+                     <img src="img/delivery/5.jpg" alt="card" class="delivery__img">
+                     <span class="delivery__tag delivery__tag_fish">Рыбное</span>
+                  </a>
                </div>
                <div class="delivery__card">
-                  <img src="img/delivery/6.jpg" alt="card" class="delivery__img">
-                  <span class="delivery__tag delivery__tag_kids">Детское</span>
+                  <a href="">
+                     <img src="img/delivery/6.jpg" alt="card" class="delivery__img">
+                     <span class="delivery__tag delivery__tag_kids">Детское</span>
+                  </a>
                </div>
                <div class="delivery__card">
-                  <img src="img/delivery/7.jpg" alt="card" class="delivery__img">
-                  <span class="delivery__tag delivery__tag_parents">Родителям</span>
+                  <a href="">
+                     <img src="img/delivery/7.jpg" alt="card" class="delivery__img">
+                     <span class="delivery__tag delivery__tag_parents">Родителям</span>
+                  </a>
                </div>
                <div class="delivery__card">
-                  <img src="img/delivery/8.jpg" alt="card" class="delivery__img">
-                  <span class="delivery__tag delivery__tag_celebrate">Праздничное</span>
+                  <a href="">
+                     <img src="img/delivery/8.jpg" alt="card" class="delivery__img">
+                     <span class="delivery__tag delivery__tag_celebrate">Праздничное</span>
+                  </a>
                </div>
             </div>
 
@@ -279,6 +295,29 @@
          </div>
       </div>
    </footer>
-</body>
+
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script>
+         $(document).ready(function(){
+            $('.single-item').slick({
+               autoplay: true,
+               autoplaySpeed: 1,
+               // infinite: false,
+               dots: false,
+               arrows: true,
+               accessibility: false,
+               slidesToShow: 1,
+               autoplaySpeed: 3000,
+               adaptiveHeight:true,
+               nextArrow:'<button type="button" class="slick-next"></button>',
+               prevArrow:'<button type="button" class="slick-prev"></button>',
+                           
+            });
+         });
+      </script>
+
+   </body>
 
 </html>
